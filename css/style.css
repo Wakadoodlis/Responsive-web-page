@@ -1,0 +1,140 @@
+
+/* */
+* {box-sizing: border-box;}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+/* typography
+========================= */
+
+.title-text {
+  font-size: 2.2rem;
+}
+
+.title-text span {
+  display: block;
+  font-weight: 300;
+  margin-bottom:1.5em;
+}
+
+@media (min-width:55rem) {
+  .title-text {
+    font-size: 3rem;
+  }
+}
+
+/* BUTTONS */
+
+.button {
+  display: inline-block;
+  font-size: 1.11rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.5em;
+}
+
+.btn-blue {
+  color:#2196F3;
+  border-color: #2196F3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background: #2196F3;
+  color: #232323;
+  font-weight: 500;
+}
+
+/*media */
+
+@media (min-width:55rem) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+/* header 
+========================= */
+
+header {
+  position:absolute; 
+  left: 0;
+  right:0;
+  margin: 1em;
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin:1em;
+}
+
+nav a {
+  text-decoration: none;
+  padding: .5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color:#fff;
+}
+
+nav a:hover,
+nav a:focus {
+  color:#ddd;
+}
+
+.logo {
+  width: 6rem;
+}
+/*media */
+
+@media (min-width:55rem) {
+  .logo {
+    float: left;
+  }
+  nav {
+    float:right;
+  }
+}
+
+/* hero 
+========================= */
+
+.home-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/hero.jpeg);
+  padding: 10em 0;
+  background-size: cover;
+  background-position: center;
+  color:#fff;
+}
+
+/*media */
+
+@media (min-width:55rem) {
+  .home-hero {
+    height: 100vh;
+    padding-top: 30vh;
+  }
+
+}
