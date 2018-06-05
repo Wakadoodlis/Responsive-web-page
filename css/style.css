@@ -1,6 +1,9 @@
 
 /* */
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -67,6 +70,19 @@ p:last-of-type { margin-bottom: 0;}
   padding: .5em 1.5em;
 }
 
+/*media */
+
+@media (min-width:60rem) {
+  .button {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
 .btn-blue {
   color:#8e44ad;
   border-color: #8e44ad;
@@ -79,13 +95,7 @@ p:last-of-type { margin-bottom: 0;}
   font-weight: 500;
 }
 
-/*media */
 
-@media (min-width:60rem) {
-  .button {
-    font-size: 1.2rem;
-  }
-}
 /* header 
 ========================= */
 
@@ -237,6 +247,57 @@ nav a:focus {
     transform:translateX(0);
     
   }
+}
 
-  
+/* Portfolio 
+========================= */
+
+.portfolio {
+  margin: 3em 0;
+}
+
+.port-item {
+  margin:0;
+  position: relative;
+}
+/* images ind divs is displayed as inline block, for this reason they have white line. to remove it - display block */ 
+.port-item img {
+  display: block;
+}
+
+.port-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left:0em;
+  right:0em;
+  color:#fff;
+  background:  rgba(0, 0, 0, 0.5);
+  padding-bottom: 1.5em;
+}
+
+.port-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 45rem) {
+  .port-item {
+    width: 50%;
+    float:left;
+  }
+}
+
+@media (min-width: 60rem) {
+  .port-item {
+    width: 33.3333334%;
+    overflow: hidden;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
 }
