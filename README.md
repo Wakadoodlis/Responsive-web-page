@@ -1,5 +1,5 @@
 # Responsive-WEB
-This is my first responsive webpage layout made "mobile first" approach.
+This is my first responsive webpage layout made with "mobile first" approach.
 
 # What have I learned:
 - mobile first approach;
